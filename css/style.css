@@ -26,6 +26,7 @@ main{
     color: grey;
 
     height: 100vh;
+    padding-bottom: 90px;
     /* test */
 }
 
@@ -70,7 +71,7 @@ main{
 }
 
 .playlist{
-    height: 370px;
+    height: 420px;
     /* test */
 }
 
@@ -133,7 +134,7 @@ h2{
 
 .cards-inner{
     width: 100%;
-    
+
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -158,3 +159,34 @@ h2{
     border: 2px solid white;
     /* test */
 }
+
+
+
+/* MEDIA QUERY */
+
+
+/* MEDIA QUERY VERSIONE MEDIUM 992px */
+
+@media screen and (max-width: 992px) {
+
+    .cards{
+        width: calc(100% / 4 - 20px);
+    }
+    
+}
+
+
+
+
+/* MEDIA QUERY VERSIONE SMALL 768px */
+
+@media screen and (max-width: 768px) {
+
+    .cards{
+        width: calc(100% / 2 - 20px);
+    }
+    
+}
+
+
+/* MEDIA QUERY VERSIONE EXTRA SMALL 576px */
