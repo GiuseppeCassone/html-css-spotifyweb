@@ -13,6 +13,11 @@ main{
 }
 
 .col-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
     width: 230px;
     background-color: black;
     color: grey;
@@ -24,11 +29,19 @@ main{
 .col-right{
     flex-grow: 1;
     background-color: #151922;
+    padding-left: 250px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     height: 100vh;
+    overflow-y: scroll;
 }
 
 .player{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
     width: 100%;
     height: 90px;
     background-color: #282828;
@@ -50,6 +63,11 @@ header{
     width: 100%;
     height: 90px;
     background-color: #282828;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
 
 header .btn{
@@ -86,7 +104,7 @@ header .btn{
     /* test */
 }
 
-.recent-play{
+h2{
     color: white;
 }
 
