@@ -23,6 +23,7 @@ main{
 
 .col-right{
     flex-grow: 1;
+    background-color: #151922;
 
     height: 100vh;
 }
@@ -31,4 +32,74 @@ main{
     width: 100%;
     height: 90px;
     background-color: #282828;
+}
+
+.mg-b{
+    margin-bottom:30px;
+}
+
+
+
+/* SEZIONE CON UPGRADE E BRANI */
+
+/* UPGRADE */
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 90px;
+    background-color: #282828;
+}
+
+header .btn{
+    width: 230px;
+
+    color: white;
+
+    text-align: center;
+    padding-top: 30px;
+    background-color: black;
+    height: 100%;
+    /* test */
+}
+
+
+
+/* BRANI */
+
+.tracks{
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.links{
+    width: 100%;
+
+    height: 50px;
+    background-color: aqua;
+    /* test */
+}
+
+.recent-play{
+    color: white;
+}
+
+.cards-inner{
+    display: flex;
+    gap: 20px;
+
+}
+
+.cards{
+    width: calc(100% / 6 - 20px);
+
+    height: 100px;
+    background-color: white;
+    /* test */
 }
