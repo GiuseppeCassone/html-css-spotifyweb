@@ -190,3 +190,14 @@ h2{
 
 
 /* MEDIA QUERY VERSIONE EXTRA SMALL 576px */
+
+@media screen and (max-width: 576px) {
+    
+    .col-left{
+        width: 50px;
+    }
+
+    .col-right{
+        padding-left: 60px;
+    }
+}
