@@ -25,6 +25,7 @@ main{
     
 
     height: calc(100vh - 90px);
+    overflow-y: auto;
 }
 
 .col-right{
@@ -56,18 +57,22 @@ main{
     margin-bottom:30px;
 }
 
+.mg-b-sm{
+    margin-bottom: 15px;
+}
+
 
 /* SIDEBAR */
 
-.logo, .icons, .playlist, .user{
+.logo, .icons, .playlist{
     width: 100%;
-    padding-right: 70px;
+    padding-right: 50px;
 
 }
 
 img{
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .icons{
@@ -80,7 +85,7 @@ img{
     display: flex;
 }
 
-.icons img{
+.icon-link img{
     width: 30px;
     margin-bottom: 0;
     margin-right: 10px;
@@ -88,11 +93,34 @@ img{
 
 .bar-text{
     align-self: center;
+
 }
 
-.playlist{
-    height: 420px;
-    /* test */
+.playlist .white{
+    margin-bottom: 10px;
+}
+
+.playlist i{
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.user{
+    width: 100%;
+    padding-right: 20px;
+}
+
+.user img:first-of-type{
+    width: 20px;
+}
+
+hr{
+    opacity: 0.5;
+}
+
+.profile{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
 }
 
 
