@@ -18,6 +18,8 @@ main{
     flex-direction: column;
 
     width: 230px;
+    padding-left: 20px;
+    padding-top: 20px;
     background-color: black;
     color: grey;
 
@@ -58,11 +60,12 @@ main{
 
 .logo, .icons, .playlist, .user{
     width: 100%;
+    padding-right: 70px;
 
-    height: 80px;
-    border: 2px solid white;
-    /* test */
+}
 
+.logo img{
+    width: 100%;
 }
 
 .playlist{
@@ -183,6 +186,10 @@ h1{
 
 .title{
     margin-bottom: 10px;
+}
+
+.circle{
+    border-radius: 50%;
 }
 
 
