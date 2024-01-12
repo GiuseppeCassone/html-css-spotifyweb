@@ -84,9 +84,11 @@ main{
 header{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: calc(100% - 230px);
     height: 90px;
-    background-color: #282828;
+    padding-right: 20px;
+    background-color:rgba(0, 0, 0, 0.4);
 
     position: fixed;
     right: 0;
@@ -95,15 +97,16 @@ header{
 }
 
 header .btn{
-    width: 230px;
+    width: 250px;
+
+    padding: 10px 32px;
 
     color: white;
-
     text-align: center;
-    padding-top: 30px;
-    background-color: black;
-    height: 100%;
-    /* test */
+    border: solid white;
+    border-radius: 25px;
+
+
 }
 
 
