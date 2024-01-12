@@ -21,7 +21,8 @@ main{
     padding-left: 20px;
     padding-top: 20px;
     background-color: black;
-    color: grey;
+    color: rgba(255, 255, 255, 0.5);
+    
 
     height: calc(100vh - 90px);
 }
@@ -64,8 +65,29 @@ main{
 
 }
 
-.logo img{
+img{
     width: 100%;
+    margin-bottom: 18px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icon-link{
+    display: flex;
+}
+
+.icons img{
+    width: 30px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.bar-text{
+    align-self: center;
 }
 
 .playlist{
@@ -167,11 +189,6 @@ h1{
     
 }
 
-
-.cards img{
-    width: 100%;
-    margin-bottom: 18px;
-}
 
 .cards div{
     width: 100%;
