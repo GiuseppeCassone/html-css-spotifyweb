@@ -13,10 +13,6 @@ main{
 }
 
 .col-left{
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2; */
 
     display: flex;
     flex-direction: column;
@@ -25,15 +21,14 @@ main{
     background-color: black;
     color: grey;
 
-    height: 100vh;
-    padding-bottom: 90px;
-    /* test */
+    height: calc(100vh - 90px);
 }
 
 .col-right{
-    flex-grow: 1;
+    position: relative;
+    width: calc(100% - 230px);
     background-color: #151922;
-    /* padding-left: 250px; */
+
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -85,8 +80,9 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 230px);
     height: 90px;
+    
     padding-right: 20px;
     background-color:rgba(0, 0, 0, 0.4);
 
@@ -117,16 +113,18 @@ header .btn{
     display: flex;
     flex-direction: column;
 
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     
 }
 
+
 .links{ 
     width: 100%;
     padding-top: 10px;
 }
+
 
 .links ul{
     display: flex;
@@ -138,25 +136,38 @@ header .btn{
     color: rgba(255, 255, 255, 0.5);
 }
 
+
 h2{
     color: white;
 }
+
+.white{
+    font-weight: bold;
+    color: white;
+}
+
 
 .cards-inner{
     width: 100%;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 16px;
 
 }
 
-.cards{
-    width: calc(100% / 6 - 20px);
 
-    height: 100px;
-    background-color: white;
-    /* test */
+.cards{
+    width: calc(100% / 6 - 16px);
+
+}
+
+.cards img{
+    width: 100%;
+}
+
+.cards div{
+    text-align: center;
 }
 
 
@@ -180,7 +191,7 @@ h2{
 @media screen and (max-width: 992px) {
 
     .cards{
-        width: calc(100% / 4 - 20px);
+        width: calc(100% / 4 - 16px);
     }
     
 }
@@ -193,7 +204,7 @@ h2{
 @media screen and (max-width: 768px) {
 
     .cards{
-        width: calc(100% / 2 - 20px);
+        width: calc(100% / 2 - 16px);
     }
     
 }
@@ -208,6 +219,10 @@ h2{
     }
 
     .col-right{
-        padding-left: 60px;
+        width: calc(100% - 50px);
+    }
+
+    header{
+        width: calc(100% - 50px);
     }
 }
