@@ -222,6 +222,7 @@ h1{
 }
 
 
+
 .cards div{
     width: 100%;
     margin-bottom: 12px;
@@ -246,12 +247,52 @@ h1{
 /* FOOTER */
 
 .song, .play, .options{
-    width: calc(100% / 3);
 
     border: 2px solid white;
     /* test */
 }
 
+.song{
+    flex-grow: 1;
+
+    display: flex;
+
+    padding: 20px 5px;
+}
+
+.artist{
+    display: flex;
+    width: 60%;
+}
+
+.artist img{
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.song-text{
+    align-self: center;
+}
+
+.song-icons{
+    width: 40%;
+    align-self: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.song-icons i{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.play{
+    flex-grow: 2;
+}
+
+.options{
+    flex-grow: 1;
+}
 
 
 /* MEDIA QUERY */
