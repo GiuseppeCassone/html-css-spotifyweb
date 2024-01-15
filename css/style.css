@@ -159,7 +159,7 @@ header{
     width: calc(100% - 230px);
     height: 90px;
     
-    padding-right: 20px;
+    padding-right: 40px;
     background-color:rgba(0, 0, 0, 0.4);
 
     position: fixed;
@@ -204,6 +204,7 @@ header .btn:hover{
 .links{ 
     width: 100%;
     padding-top: 10px;
+
 }
 
 
@@ -215,6 +216,10 @@ header .btn:hover{
 
     list-style-type: none;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.links ul li{
+    border-bottom: 2px solid #151922;
 }
 
 .links ul li:hover{
@@ -232,6 +237,10 @@ h1{
 .white{
     font-weight: bold;
     color: white;
+}
+
+.recent-play{
+    padding-top: 30px;
 }
 
 
@@ -310,7 +319,7 @@ h1{
 
 .artist{
     display: flex;
-    width: 60%;
+
 }
 
 .artist img{
@@ -328,7 +337,7 @@ h1{
 }
 
 .song-icons{
-    width: 40%;
+
     align-self: center;
     color: rgba(255, 255, 255, 0.5);
     padding-left: 30px;
@@ -428,6 +437,10 @@ h1{
     border-radius: 10px;
 
 
+}
+
+.vol .fa-circle{
+    font-size: 16px;
 }
 
 
