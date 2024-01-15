@@ -100,6 +100,17 @@ img{
 
 }
 
+.icons .icon-link:hover{
+    color: white;
+    border-left: 2px solid lawngreen;
+}
+
+.icons .icon-link:active{
+    color: white;
+    border-left: 2px solid lawngreen;
+}
+
+
 .playlist .white{
     margin-bottom: 10px;
 }
@@ -107,6 +118,10 @@ img{
 .playlist i{
     font-size: 50px;
     margin-right: 10px;
+}
+
+.playlist .icon-link:hover, .playlist .bar-text:hover{
+    color: white;
 }
 
 .user{
@@ -125,6 +140,10 @@ hr{
 .profile{
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
+}
+
+.user .bar-text:hover{
+    color: white;
 }
 
 
@@ -162,6 +181,11 @@ header .btn{
 
 }
 
+header .btn:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
 
 
 /* BRANI */
@@ -191,6 +215,11 @@ header .btn{
 
     list-style-type: none;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.links ul li:hover{
+    color: white;
+    border-bottom: 2px solid lawngreen;
 }
 
 
@@ -242,6 +271,10 @@ h1{
     border-radius: 50%;
 }
 
+.cards img:hover{
+    opacity: 0.3;
+}
+
 
 
 /* FOOTER */
@@ -268,6 +301,10 @@ h1{
 
 .song-text{
     align-self: center;
+}
+
+.song-text .sub:hover{
+    text-decoration: underline;
 }
 
 .song-icons{
@@ -322,6 +359,7 @@ h1{
 }
 
 .bar{
+    position: relative;
     height: 5px;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -338,6 +376,15 @@ h1{
     border-radius: 10px;
 }
 
+.play-time .fa-circle, .vol .fa-circle{
+    position: absolute;
+    top: -5px;
+    left: 20%;
+
+    opacity: 0;
+    
+}
+
 
 
 .options{
@@ -352,6 +399,7 @@ h1{
 }
 
 .vol{
+    position: relative;
     width: 50%;
     height: 5px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -359,6 +407,25 @@ h1{
 
 
 }
+
+
+.song-icons i:hover{
+    color: white;
+}
+
+.play .fa-circle-play:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.play-time .bar:hover .bar-in, .options .vol:hover .vol-in{
+    background-color: lawngreen;
+}
+
+.bar:hover .fa-circle, .vol:hover .fa-circle{
+    opacity: 1;
+}
+
 
 
 
